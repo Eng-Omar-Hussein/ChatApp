@@ -1,0 +1,28 @@
+.sr_only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}
+.input_outline {
+  background-color: transparent !important;
+  color: white !important;
+}
+.input_outline::placeholder {
+  color: white !important;
+}
+.input_invalid:focus {
+  /* border-width: 2px !important; */
+  outline: none !important;
+  border-color: #ed9e9e !important;
+  box-shadow: 0 0 10px red !important;
+}
+.error {
+  color: red;
+}
